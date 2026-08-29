@@ -3,6 +3,21 @@
 import { motion } from "framer-motion";
 
 const images = [
+  "/media/img21.jpg",
+  "/media/img22.jpg",
+  "/media/img23.jpg",
+  "/media/img24.jpg",
+  "/media/img25.jpg",
+  "/media/img26.jpg",
+  "/media/img27.jpg",
+  "/media/img28.jpg",
+  "/media/img29.jpg",
+  "/media/img30.jpg",
+  "/media/img31.jpg",
+  "/media/img32.jpg",
+  "/media/img33.jpg",
+  "/media/img34.jpg",
+  "/media/img35.jpg",
   "/media/img6.jpg",
   "/media/img7.jpg",
   "/media/img8.jpg",

@@ -41,11 +41,15 @@ export default function Space() {
             style={{ y }} 
             className="absolute inset-[-10%] w-[120%] h-[120%]"
           >
-            <img
-              src="/media/img5.jpg"
-              alt="MAYG Space"
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
               className="object-cover w-full h-full opacity-80"
-            />
+            >
+              <source src="/media/vid7.mp4" type="video/mp4" />
+            </video>
           </motion.div>
           {/* Maroon/Gold Overlay to fit the description */}
           <div className="absolute inset-0 bg-mayg-maroon mix-blend-overlay opacity-30"></div>

@@ -42,14 +42,26 @@ export default function Philosophy() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="order-1 md:order-2 relative h-[400px] md:h-[600px] w-full"
+            className="order-1 md:order-2 grid grid-cols-2 gap-4 h-[400px] md:h-[600px] w-full"
           >
-            <img 
-              src="/media/img1.jpg" 
-              alt="MAYG Philosophy"
-              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
-            />
-            <div className="absolute inset-0 bg-mayg-maroon mix-blend-overlay opacity-20"></div>
+            <div className="relative w-full h-full overflow-hidden mt-8">
+              <img 
+                src="/media/img16.jpg" 
+                alt="MAYG Philosophy"
+                className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
+              />
+            </div>
+            <div className="relative w-full h-full overflow-hidden mb-8">
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
+              >
+                <source src="/media/vid6.mp4" type="video/mp4" />
+              </video>
+            </div>
           </motion.div>
         </div>
       </div>

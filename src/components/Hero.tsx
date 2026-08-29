@@ -12,9 +12,9 @@ export default function Hero() {
           loop 
           muted 
           playsInline 
-          className="object-cover w-full h-full opacity-60"
+          className="object-cover w-full h-full opacity-60 scale-105"
         >
-          <source src="/media/vid1.mp4" type="video/mp4" />
+          <source src="/media/vid5.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-mayg-charcoal/40 via-mayg-charcoal/20 to-mayg-charcoal/90"></div>
       </div>

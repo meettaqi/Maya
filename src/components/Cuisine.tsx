@@ -4,22 +4,28 @@ import { motion } from "framer-motion";
 
 const dishes = [
   {
-    name: "Bluefin Tuna Tartare",
-    description: "Oscietra caviar, ponzu emulsion, gold leaf.",
-    image: "/media/img2.jpg",
-    style: "col-span-12 md:col-span-7 h-[500px]",
+    name: "Exquisite Starters",
+    description: "Delicate beginnings, crafted with precision.",
+    image: "/media/img17.jpg",
+    style: "col-span-12 md:col-span-6 h-[400px] md:h-[600px]",
   },
   {
-    name: "A4 Wagyu Striploin",
-    description: "Truffle pomme purée, soy-bordelaise, maitake.",
-    image: "/media/img3.jpg",
-    style: "col-span-12 md:col-span-5 h-[400px] md:mt-24",
+    name: "Signature Mains",
+    description: "The meeting of French technique and Japanese ingredients.",
+    image: "/media/img18.jpg",
+    style: "col-span-12 md:col-span-6 h-[400px] md:h-[600px] md:mt-24",
   },
   {
-    name: "Matcha Mille-Feuille",
-    description: "Yuzu cream, delicate puff pastry, roasted sesame.",
-    image: "/media/img4.jpg",
-    style: "col-span-12 md:col-span-6 md:col-start-4 h-[600px] mt-12",
+    name: "Desserts & Pastry",
+    description: "A final act of artistry.",
+    image: "/media/img19.jpg",
+    style: "col-span-12 md:col-span-8 h-[400px] md:h-[500px]",
+  },
+  {
+    name: "Mixology",
+    description: "Refined creations.",
+    image: "/media/img20.jpg",
+    style: "col-span-12 md:col-span-4 h-[400px] md:h-[500px] md:-mt-24",
   }
 ];
 

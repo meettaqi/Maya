@@ -5,6 +5,20 @@ import { motion } from "framer-motion";
 export default function Reservation() {
   return (
     <section id="reserve" className="py-32 bg-mayg-charcoal relative">
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="object-cover w-full h-full opacity-30"
+        >
+          <source src="/media/vid8.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-mayg-charcoal/80 mix-blend-multiply"></div>
+      </div>
+
       <div className="container mx-auto px-6 md:px-12 text-center max-w-4xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
