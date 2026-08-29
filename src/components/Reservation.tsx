@@ -7,15 +7,11 @@ export default function Reservation() {
     <section id="reserve" className="py-32 bg-mayg-charcoal relative">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
+        <img
+          src="/media/img23.jpg"
+          alt="Reservation Background"
           className="object-cover w-full h-full opacity-30"
-        >
-          <source src="/media/vid8.mp4" type="video/mp4" />
-        </video>
+        />
         <div className="absolute inset-0 bg-mayg-charcoal/80 mix-blend-multiply"></div>
       </div>
 

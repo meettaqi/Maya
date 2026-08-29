@@ -57,15 +57,13 @@ export default function Philosophy() {
               />
             </div>
             <div className="relative w-full h-full overflow-hidden mb-8">
-              <video 
-                autoPlay 
-                loop 
-                muted 
-                playsInline 
-                className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
-              >
-                <source src="/media/vid6.mp4" type="video/mp4" />
-              </video>
+              <Image 
+                src="/media/img21.jpg" 
+                alt="MAYG Culinary Details"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+              />
             </div>
           </motion.div>
         </div>
