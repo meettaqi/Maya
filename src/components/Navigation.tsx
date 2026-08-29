@@ -26,8 +26,8 @@ export default function Navigation() {
   return (
     <>
       <header
-        className={`fixed top-0 w-full z-50 transition-all duration-700 ease-in-out ${
-          isScrolled ? "bg-mayg-charcoal/90 backdrop-blur-md py-4" : "bg-transparent py-6"
+        className={`fixed top-0 w-full z-50 transition-all duration-700 ease-in-out border-b ${
+          isScrolled ? "bg-mayg-maroonDark/95 backdrop-blur-md py-4 border-mayg-gold/20" : "bg-transparent py-6 border-transparent"
         }`}
       >
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
@@ -74,7 +74,7 @@ export default function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[60] bg-mayg-charcoal flex flex-col justify-center items-center"
+            className="fixed inset-0 z-[60] bg-mayg-maroonDark flex flex-col justify-center items-center"
           >
             <button
               className="absolute top-6 right-6 text-mayg-sand"

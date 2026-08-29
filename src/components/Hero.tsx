@@ -16,7 +16,8 @@ export default function Hero() {
         >
           <source src="/media/vid5.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-mayg-charcoal/40 via-mayg-charcoal/20 to-mayg-charcoal/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-mayg-maroonDark/60 via-mayg-charcoal/40 to-mayg-charcoal/90 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-mayg-charcoal via-transparent to-transparent"></div>
       </div>
 
       {/* Content */}

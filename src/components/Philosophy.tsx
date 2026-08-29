@@ -27,8 +27,9 @@ export default function Philosophy() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="order-2 md:order-1"
+            className="order-2 md:order-1 relative pl-8 border-l border-mayg-gold/30"
           >
+            <div className="absolute left-[-1px] top-0 w-[1px] h-1/3 bg-mayg-gold"></div>
             <p className="text-mayg-sand/70 text-lg leading-relaxed mb-6 font-light">
               At MAYG, we believe that true luxury lies in restraint. Our dual heritage informs every decision, from the sourcing of our ingredients to the cloud-like ambiance of our dining room.
             </p>
