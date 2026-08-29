@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 const dishes = [
   {
     name: "Exquisite Starters",
@@ -55,10 +57,12 @@ export default function Cuisine() {
               className={`${dish.style} group flex flex-col`}
             >
               <div className="relative w-full h-full overflow-hidden mb-6 flex-grow">
-                <img 
+                <Image 
                   src={dish.image} 
                   alt={dish.name}
-                  className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
                 />
               </div>
               <div>

@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 const images = [
   "/media/img21.jpg",
   "/media/img22.jpg",
@@ -55,15 +57,17 @@ export default function Gallery() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
+              transition={{ duration: 0.8, delay: (index % 4) * 0.1 }}
               className={`relative overflow-hidden group ${
                 index % 4 === 0 || index % 4 === 3 ? "col-span-2 row-span-2 h-[400px] md:h-[600px]" : "col-span-2 md:col-span-2 h-[200px] md:h-[300px]"
               }`}
             >
-              <img
+              <Image
                 src={img}
                 alt={`Gallery image ${index + 1}`}
-                className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-1000 ease-out"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-out"
               />
               <div className="absolute inset-0 bg-mayg-charcoal/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </motion.div>

@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 export default function Philosophy() {
   return (
     <section id="experience" className="py-32 md:py-48 bg-mayg-charcoal relative">
@@ -46,10 +48,12 @@ export default function Philosophy() {
             className="order-1 md:order-2 grid grid-cols-2 gap-4 h-[400px] md:h-[600px] w-full"
           >
             <div className="relative w-full h-full overflow-hidden mt-8">
-              <img 
+              <Image 
                 src="/media/img16.jpg" 
                 alt="MAYG Philosophy"
-                className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
               />
             </div>
             <div className="relative w-full h-full overflow-hidden mb-8">
