@@ -1,0 +1,58 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+export default function Philosophy() {
+  return (
+    <section id="experience" className="py-32 md:py-48 bg-mayg-charcoal relative">
+      <div className="container mx-auto px-6 md:px-12 max-w-5xl">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          className="text-center"
+        >
+          <h2 className="text-sm md:text-xs tracking-[0.3em] uppercase text-mayg-gold mb-8">
+            The Philosophy
+          </h2>
+          <p className="font-serif text-3xl md:text-5xl lg:text-6xl text-mayg-sand leading-[1.3] md:leading-[1.2] text-balance">
+            Where the rigorous technique of French gastronomy meets the profound respect and minimalism of Japanese culinary artistry.
+          </p>
+        </motion.div>
+        
+        <div className="mt-24 grid md:grid-cols-2 gap-16 md:gap-24 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="order-2 md:order-1"
+          >
+            <p className="text-mayg-sand/70 text-lg leading-relaxed mb-6 font-light">
+              At MAYG, we believe that true luxury lies in restraint. Our dual heritage informs every decision, from the sourcing of our ingredients to the cloud-like ambiance of our dining room.
+            </p>
+            <p className="text-mayg-sand/70 text-lg leading-relaxed font-light">
+              Executive Chef Aadel Ouaoua curates an evolving narrative on the plate. It is a dialogue between two of the world's most revered culinary traditions, elevated by the contemporary spirit of Dubai Design District.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="order-1 md:order-2 relative h-[400px] md:h-[600px] w-full"
+          >
+            <img 
+              src="/media/img1.jpg" 
+              alt="MAYG Philosophy"
+              className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
+            />
+            <div className="absolute inset-0 bg-mayg-maroon mix-blend-overlay opacity-20"></div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
